@@ -79,7 +79,7 @@ def win(nice,mean,name):
 def lose(nice,mean,name):
     # Substitute the {} wildcards with our variable values
     print("\nAhhh too bad, game over! \n{}, you live in a dirty beat-up van down by the river, wretched and alone!".format(name) )
-    im = Image.open("Images\living_in_a_van.png")
+    im = Image.open("living_in_a_van.png")
     im.show()
     # Call again function and pass in our variables
     again(nice,mean,name)
