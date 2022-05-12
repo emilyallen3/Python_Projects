@@ -33,6 +33,7 @@ Y = privateObject.getPrivate()
 print(X)
 print(Y)
 
+#This is a combination of a protected variable and a private variable
 print(X+Y)
 
 
