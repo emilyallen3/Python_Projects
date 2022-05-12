@@ -11,7 +11,7 @@ class Protected:
         self.__privateVariable = 2
 
     def getPrivate(self):
-        print(self.__privateVariable)
+        return self.__privateVariable
 
     def setPrivate(self,newPrivate):
         self.__privateVariable = newPrivate
@@ -26,4 +26,14 @@ privateObject = Protected()
 privateObject.getPrivate()
 privateObject.setPrivate(4)
 privateObject.getPrivate()
+
+X = protectedObject._protectedVariable
+Y = privateObject.getPrivate()
+
+print(X)
+print(Y)
+
+print(X+Y)
+
+
 
