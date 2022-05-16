@@ -26,12 +26,12 @@ text2.pack(side=RIGHT, padx=10)
 #Funtion to open dialog box and insert selected directory folder path in text widget
 def select_folder1():
 
-    folderpath1 = fd.askdirectory(title='Open a folder', initialdir='/')
+    folderpath1 = fd.askdirectory(initialdir='/')
     text1.insert('1.0',folderpath1)
 
 def select_folder2():
 
-    folderpath2 = fd.askdirectory(title='Open a folder', initialdir='/')
+    folderpath2 = fd.askdirectory(initialdir='/')
     text2.insert('1.0',folderpath2)
 
 #buttons
@@ -40,13 +40,15 @@ select_button1.pack(side=LEFT, padx=10, ipadx=10)
 select_button2 = Button(root, text="Select folder to copy to...", command=select_folder2)
 select_button2.pack(side=RIGHT, padx=10, ipadx=10)
 
-#get the folder path where the source of the files are
-source = (text1.get('1.0', 'end-1c')+ '/')
 
-#get the folder path where the files will be coppied too
-destination = (text2.get('1.0', 'end-1c')+ '/')
 
 def copy_files():
+    #get the folder path where the source of the files are
+    source = (text1.get('1.0', 'end-1c') + '/')
+
+    #get the folder path where the files will be coppied too
+    destination = (text2.get('1.0', 'end-1c') + '/')
+    
     files = os.listdir(source)
     for i in files:
         if i.endswith('.txt'):
@@ -55,7 +57,8 @@ def copy_files():
             modDiff = currentTime - modTime
             if modDiff < 86400.0:
                 #we are saying move the files represented by i to their new destination
-                shutil.copy(source+i, destination)
+                shutil.copy2(source+i, destination)
+                text2.insert('2.0','\nFile copied successfully!')
 
 #button
 copy_button = Button(root, text="Copy modified files...", width=20,command=copy_files)
