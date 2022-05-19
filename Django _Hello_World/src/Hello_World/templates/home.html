@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Hello World!{% endblock %}
+
+{% block header %}Welcome to my World!{% endblock %}
+
+{% block content %}
+
+{% for name in names %}
+    <ul>
+        {% if name == 'Emily' %}
+        <li>Hello {{ name }}</li>
+        {% else %}
+        <li>{{ name }}</li>
+        {% endif %}
+    </ul>
+{% endfor %}
+
+{% endblock %}
