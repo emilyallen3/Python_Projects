@@ -3,16 +3,16 @@ This Repository Contains Python Projects completed for The Tech Academy. They us
 
 Projects:
 <ul>
-  <li> Phonebook </li>
+  <li> Student Tracker</li>
   <li> Check Files GUI </li>
   <li> Checkbook </li>
 </ul>
 
-Phonebook
-  This project funciton as a phone book for a user. It saves a contact's name, phone number, and email address in a database and allows the user to update and delete previously stored entries.
+Student Tracker<br>
+  <p>This project functions as a way to organize student information. It saves a student's name, phone number, email address, and current course in a database and allows the user to update and delete previously stored entries.</p>
   
-Check Files GUI
-  This project allows the user to choose to transfer all .txt files from one chosen directory to another. All files that are moved will be saved in a database.
+Check Files GUI<br>
+  <p>This project allows the user to choose to transfer all .txt files from one chosen directory to another. All files that are moved will be saved in a database.</p>
   
-Checkbook
-  This project allows the user to create accounts and track deposits and withdrawals in and out the account.
+Checkbook<br>
+  <p>This project allows the user to create accounts and track deposits and withdrawals in and out the account.</p>
