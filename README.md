@@ -6,6 +6,7 @@ Projects:
   <li> Student Tracker</li>
   <li> Check Files GUI </li>
   <li> Checkbook </li>
+  <li> Webpage Generator </li>
 </ul>
 
 Student Tracker<br>
@@ -16,3 +17,6 @@ Check Files GUI<br>
   
 Checkbook<br>
   <p>This project allows the user to create accounts and track deposits and withdrawals in and out the account.</p>
+  
+Webpage Generator<br>
+  <p>This project uses the tkinter gui to allow the user to display on a webpage whatever body text they enter.</p>
