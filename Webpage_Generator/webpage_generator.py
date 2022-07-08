@@ -42,7 +42,7 @@ def openWebpage():
     fullText = htmlString1 + updatedBody + htmlString2
 
     #this creates and opens the html file
-    createWrite = open('../Webpage_Generator/main.html', 'w')
+    createWrite = open('main.html', 'w')
 
     #this writes our html file with the updated body from the user
     createWrite.write(fullText)
